@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="css/index.css">
+  </head>
+  <body>
+    <!-- navigation bar -->
+    <header class="header">
+      <a class="logo" href="index.html"><img class="logo-image" src="images/logo.png"/></a>
+      <div class="nav-bar">
+        <a class="bar-item bar-item-active" href="index.html">Home</a>
+        <a class="bar-item" href="about.html">About</a>
+        <a class="bar-item" href="activities.html">Activities</a>
+        <a class="bar-item" href="modes.html">Modes</a>
+        <a class="bar-item" href="contact.html">Contact</a>
+        <a class="bar-item" href="information.html">Information</a>
+      </div>
+    </header>
+    <!-- main content area -->
+    <div class="home-page">
+      <div class="banner">
+        <div class="bluid">
+          <div style="font-weight: 700; line-height: 45px;">
+            <div style="padding: 20px 0; font-size: 80px;  color: #2196F3; ">Health</div>
+            <div style="margin: 40px 0; font-size: 60px; line-height: 50px;">Your Precious Asset</div>
+          </div>
+          <div style="padding: 20px 0; font-size: 20px; color: #555;">Welcome! <span class="smile"></span><br/><br/>Your Guide To Leisure Time Activities</div>
+        </div>
+      </div>
+      <!-- carousel -->
+      <div class="carousel">
+        <div class="slideshow-container">
+            <div class="slide fade">
+              <img src="images/gym1.jpg" alt="Image 1">
+            </div>
+            <div class="slide fade">
+                <img src="images/gym2.jpg" alt="Image 2">
+            </div>
+            <div class="slide fade">
+                <img src="images/gym3.jpg" alt="Image 3">
+            </div>
+        </div>
+        <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+        <button class="next" onclick="plusSlides(1)">&#10095;</button>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="reader">
+        <div class="reader-title">ADDRESS</div>
+        <div class="reader-info">
+          <div class="reader-item">908/8 Gillingham Street</div>
+          <div class="reader-item">Woolloongabba QLD 4102</div>
+        </div>
+      </div>
+      <div class="reader">
+        <div class="reader-title">CALL US</div>
+        <div class="reader-info">
+          <div class="reader-item">(+61) 735569500</div>
+          <div class="reader-item">(+61) 478469695</div>
+        </div>
+      </div>
+      <div class="reader">
+        <div class="reader-title">EMAIL</div>
+        <div class="reader-info">
+          <div class="reader-item">xxxx@gmail.com</div>
+          <div class="reader-item">xxxx@gmail.com</div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/index.js"></script>
+  </body>
+</html>

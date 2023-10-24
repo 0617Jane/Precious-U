@@ -1,0 +1,298 @@
+html, body
+  margin: 0
+  padding: 0
+  width: 100%
+  height: 100%
+
+ul, li, p
+  margin: 0
+  padding: 0
+
+li
+  list-style: none
+
+a
+  color: #000
+  text-decoration: none
+
+@font-face
+  font-family: mFont;
+  src: url('../fonts/Poppins-ExtraLight.ttf');
+
+.header
+  padding: 0 50px
+  display: flex
+  justify-content: space-between
+  align-items: center
+  height: 80px
+  background: #fff
+  border-bottom: 1px solid #eee
+  overflow hidden
+  .logo
+    height: 60px
+    border-radius: 10px
+    overflow hidden
+    .logo-image
+      height: 100%
+  .nav-bar
+    display: flex
+    height: 100%
+    .bar-item
+      width: 120px
+      display: flex
+      justify-content: center
+      align-items: center
+      font-size: 18px
+      color: #222
+      cursor pointer
+      transition: .2s
+      font-family: mFont
+      border-bottom: 2px solid transparent
+      &:hover
+        color: #2196F3
+        font-size: 20px
+        font-weight: 700
+    .bar-item-active
+      color: #2196F3
+      font-size: 20px
+      font-weight: 700
+      border-bottom: 2px solid #2196F3
+.home-page
+  position: relative
+  width: 100%
+  min-height: calc(100% - 82px)
+  display: flex
+  .banner
+    width: 50%
+    display: flex
+    justify-content: center
+    align-items: center
+    .bluid
+      padding: 20px
+      .smile
+        display: inline-block
+        width: 30px
+        height: 30px
+        background: url('../images/smile.png') 50% 50% no-repeat
+        background-size: cover
+  .carousel
+    position: relative
+    width: 50%
+    padding: 0 20px
+    box-sizing: border-box
+    display: flex
+    align-items: center
+    .slideshow-container
+      position: relative
+      width: 100%
+      margin: 0 auto
+      .slide
+        display: none
+        overflow hidden
+        border-radius: 20px
+        img
+          width: 100%
+          vertical-align: bottom;
+          object-fit: cover
+    .prev, .next
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      padding: 10px
+      background-color: #333
+      color: white
+      border: none
+      cursor: pointer
+    .prev
+      left: 20px
+    .next
+      right: 20px
+.footer
+  display: flex
+  justify-content: space-around
+  padding: 20px
+  background: #eee
+  .reader
+    width: 30%
+    padding: 10px
+    text-align: center
+    .reader-title
+      font-size: 20px
+      font-weight: 700
+      color: #333
+    .reader-info
+      padding-top: 20px
+      .reader-item
+        font-size: 14px
+        color: #666
+        line-height: 40px
+
+.about-page
+  display: flex
+  align-items: center
+  justify-content: center
+  background: #eee url('../images/about_bg.jpg') 50% 50% no-repeat
+  background-size: cover
+  .about-content
+    padding: 20px
+    display: inline-block
+    flex-direction: column
+    background: rgba(0,0,0,.3)
+    border-radius: 10px
+    .main-title
+      color: #fff
+      font-size: 50px
+      font-weight: 700
+    .subheading
+      padding: 10px 0
+      font-size: 24px
+      color: #fff
+
+.activities-page
+  flex-direction: column
+  height: auto
+  .activities-title
+    padding: 40px 0
+    text-align: center
+    .main-title
+      font-size: 50px
+      font-weight: 700
+      color: #2196F3
+    .subheading
+      font-size: 24px
+      color: #666
+  .activities-img
+    display: flex
+    flex-wrap: wrap
+    .aimg-item
+      position: relative
+      width: 50%
+      padding: 20px
+      box-sizing: border-box
+      flex-shrink: 0
+      border-radius: 10px
+      overflow hidden
+      img
+        position: relative
+        top 0
+        width: 100%
+        height: 100%
+        border-radius: 10px
+        vertical-align: bottom
+        object-fit: cover
+        box-shadow: 0 0 0 0 rgba(0,0,0,0)
+        transition: .5s
+        &:hover
+          top -8px
+          box-shadow: 0px 4px 10px 3px #cacaca
+  .modes-item
+    position: relative
+    width: 100%
+    padding: 20px
+    box-sizing: border-box
+    .modes-img
+      width: 100%
+      border-radius: 10px
+      overflow hidden
+      vertical-align: bottom
+    .modes-text
+      position: absolute
+      top: 0
+      bottom: 0
+      left: 0
+      right: 0
+      display: flex
+      justify-content: center
+      align-items: center
+      flex-direction: column
+      overflow hidden
+      .main-title
+        font-size: 100px
+        font-weight: 700
+        color: #fff
+      .textorange
+        text-shadow: 0px 8px 8px #FF9800
+      .textblue
+        text-shadow: 0px 8px 8px #03A9F4
+      .textred
+        text-shadow: 0px 8px 8px #F44336
+      .subheading
+        margin-top: 20px
+        padding: 0 20px
+        font-size: 24px
+        font-weight: 700
+        line-height: 50px
+        background: rgba(255,255,255,.8)
+        border-radius: 10px
+
+.contact-page
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: space-between
+  background: url(../images/about_bg.jpg) 50% 50% no-repeat
+  background-size: cover
+  .activities-title
+    width: 50%
+    padding: 40px 0
+    text-align: center
+    .main-title
+      font-size: 50px
+      font-weight: 700
+      color: #fff
+  .contact-form
+    margin: auto
+    width: 60%
+    max-width: 800px
+    padding: 50px
+    box-sizing: border-box
+    display: flex
+    align-items: center
+    justify-content: center
+    border-radius: 10px
+    background: rgba(255,255,255,.3)
+    overflow hidden
+    .main-form
+      width: 100%
+      display: flex
+      font-family: mFont
+      flex-direction: column
+      .contactus
+        margin: 10px 0
+        padding: 0 10px
+        display: block
+        box-sizing: border-box
+        width: 100%
+        height: 45px
+        color: #333
+        font-family: mFont
+        font-size: 18px
+        line-height: 45px
+        outline: none
+        border: 1px solid #eee
+        background: rgba(255,255,255,.8)
+        border-radius: 5px
+      .textarea
+        margin: 10px 0
+        padding: 0 10px
+        font-family: mFont
+        box-sizing: border-box
+        width: 100%
+        height: 100px
+        outline: none
+        color: #333
+        font-size: 18px
+        line-height: 45px
+        border: 1px solid #eee
+        background: rgba(255,255,255,.8)
+        border-radius: 5px
+      .send-btn
+        margin-top: 10px
+        width: 100%
+        line-height: 40px
+        height: 45px
+        font-size: 20px
+        border-radius: 5px
+        background: #2196F3
+        color: #fff 
+        border: none

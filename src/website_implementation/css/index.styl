@@ -172,22 +172,60 @@ a
       flex-shrink: 0
       border-radius: 10px
       overflow hidden
-      img
+      .active-title
+        font-size: 40px
+        color: #333
+        line-height: 50px
+      .active-subtitle
+        padding: 5px 0
+        line-height: 40px
+        font-size: 24px
+        color: #666
+      .active-cover
         position: relative
-        top 0
         width: 100%
-        height: 100%
-        border-radius: 10px
-        vertical-align: bottom
-        object-fit: cover
-        box-shadow: 0 0 0 0 rgba(0,0,0,0)
-        transition: .5s
-        &:hover
-          top -8px
-          box-shadow: 0px 4px 10px 3px #cacaca
+        padding-top: 100%
+        box-sizing: border-box
+        overflow hidden
+        .cover-list
+          position: absolute
+          top: 0
+          left: 0
+          width: 100%
+          height: 100%
+          display: grid
+          grid-template-columns: repeat(3, 33.33%)
+          grid-template-rows: repeat(3, 33.33%)
+          .cover-img
+            margin: 5px
+            border-radius: 10px
+            box-sizing: border-box
+            overflow hidden
+            &:hover
+              img
+                transform: scale(1.2)
+            img
+              width: 100%
+              height: 100%
+              transition: .5s
+              object-fit: cover
+.modes-page
+  flex-direction: column
+  height: auto
+  .activities-title
+    padding: 40px 0
+    text-align: center
+    .main-title
+      font-size: 50px
+      font-weight: 700
+      color: #2196F3
+    .subheading
+      font-size: 24px
+      color: #666
   .modes-item
+    margin: auto
     position: relative
-    width: 100%
+    width: 50%
     padding: 20px
     box-sizing: border-box
     .modes-img
@@ -296,3 +334,83 @@ a
         background: #2196F3
         color: #fff 
         border: none
+
+.table-page
+  display: flex
+  flex-direction: column
+  justify-content: start
+  align-items: center
+  .activities-title
+    padding: 40px 0
+    text-align: center
+    .main-title
+      font-size: 50px
+      font-weight: 700
+      color: #2196F3
+    .subheading
+      font-size: 24px
+      color: #666
+  .qgg-table
+    margin-top: 20px
+    border-collapse: collapse
+    min-width:50%
+    height: 200px
+    border:1px solid #ebeef5 !important
+    margin-bottom:20px
+    th
+      border-collapse: collapse
+      border-right:1px solid #ebeef5 !important
+      border-bottom:1px solid #ebeef5 !important
+      background-color:#f7f7f7 !important 
+      color: #909399
+      padding: 10px
+      font-size: 20px
+      font-weight: 700
+      text-align:center
+    td
+      border-collapse: collapse
+      border-right:1px solid #ebeef5 !important
+      border-bottom:1px solid #ebeef5 !important 
+      padding: 12px 10px
+      font-size: 18px
+      color: #606266
+      font-weight:normal
+      text-align:center
+      word-break: break-all
+    tr
+      &:nth-child(odd)
+        background-color:#fff !important 
+      &:nth-child(even)
+        background-color: #F5F7FA !important
+
+.model
+  position: fixed
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  display: none
+  justify-content: center
+  align-items: center
+  background: rgba(0, 0, 0, .8)
+  z-index: 99
+  .big-img
+    max-width 70%
+    .img
+      width: 100%
+      object-fit: contain
+  .close
+    position: absolute
+    right: 20px
+    top: 20px
+    width: 50px
+    height: 50px
+    background: rgba(0, 0, 0, .5) url('../images/close.png') 50% 50% no-repeat
+    background-size: 20px
+    border-radius: 50%
+    transition: .3s
+    cursor pointer
+    z-index 99
+    &:hover
+      background: rgba(0, 0, 0, 1) url('../images/close.png') 50% 50% no-repeat
+      background-size: 20px

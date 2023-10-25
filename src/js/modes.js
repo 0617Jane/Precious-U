@@ -20,7 +20,7 @@ function handleShowBigImg (type) {
     // show random img
     // 0 ~ 9
     let randomNumber = parseInt(Math.random()*9)
-    if (type !=='all'){
+    if (type !=='all') {
         bigImg.src = './images/'+type+'/'+imgList[type][randomNumber]+'.jpg'
     } else {
         let isgroup = Math.round(Math.random()) === 0 ? 'groupMode' : 'singleMode'

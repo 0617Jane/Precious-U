@@ -12,11 +12,11 @@ const imgList = {
         'running','skiing','surfing'
     ]
 }
-var scrorllTop = 0
+var scrollTop = 0
 // show big img
 function handleShowBigImg (type) {
     console.log(window.scrollY)
-    scrorllTop = window.scrollY
+    scrollTop = window.scrollY
     // show random img
     // 0 ~ 9
     let randomNumber = parseInt(Math.random()*9)
@@ -40,5 +40,5 @@ function handleClose () {
     // open body scroll
     document.documentElement.style.overflow = 'scroll'
     document.body.style.position = 'static'
-    window.scrollTo(0,scrorllTop);
+    window.scrollTo(0,scrollTop);
 }

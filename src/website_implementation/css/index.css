@@ -86,7 +86,7 @@ a {
   display: inline-block;
   width: 30px;
   height: 30px;
-  background: url("../images/smile.png") 50% 50% no-repeat;
+  background: url("../media/smile.png") 50% 50% no-repeat;
   background-size: cover;
 }
 .home-page .carousel {
@@ -157,7 +157,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #eee url("../images/about_bg.jpg") 50% 50% no-repeat;
+  background: #eee url("../media/about_bg.jpg") 50% 50% no-repeat;
   background-size: cover;
 }
 .about-page .about-content {
@@ -320,7 +320,7 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  background: url("../images/about_bg.jpg") 50% 50% no-repeat;
+  background: url("../media/about_bg.jpg") 50% 50% no-repeat;
   background-size: cover;
 }
 .contact-page .activities-title {
@@ -474,7 +474,7 @@ a {
   top: 20px;
   width: 50px;
   height: 50px;
-  background: rgba(0,0,0,0.5) url("../images/close.png") 50% 50% no-repeat;
+  background: rgba(0,0,0,0.5) url("../media/close.png") 50% 50% no-repeat;
   background-size: 20px;
   border-radius: 50%;
   transition: 0.3s;
@@ -482,6 +482,6 @@ a {
   z-index: 99;
 }
 .model .close:hover {
-  background: #000 url("../images/close.png") 50% 50% no-repeat;
+  background: #000 url("../media/close.png") 50% 50% no-repeat;
   background-size: 20px;
 }
